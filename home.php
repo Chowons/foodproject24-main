@@ -464,7 +464,7 @@
   </section>
   <-- End Testimonial Section -->
   <!-- Newsletter Section -->
-  <section id="newsletter" data-aos="fade-up">
+  <!-- <section id="newsletter" data-aos="fade-up">
     <div class="container">
       <div class="newsletter__wrapper">
         <div class="newsletter__info">
@@ -483,7 +483,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section> --> 
   <!-- End Newsletter Section -->
 
   <!-- comment -->
@@ -545,35 +545,6 @@
 
   <br><br>
 
-
-  <center>
-    <?php 
-    
-        if(isset($_GET['msg'])) {
-            $msg = $_GET['msg'];
-            echo "<span style='color: green; font-size: 20px'>".$msg."</span>";
-        }
-
-    ?>
-
-    <form action="post_comment.php" method="post">
-        <table>
-            <tr>
-                <td>Your Name:</td>
-                <td><input type="text" name="name" placeholder="Please enter your name" style="width: 230px; height: 30px;"></td>
-            </tr>
-            <tr>
-                <td>Comment:</td>
-                <td>
-                    <textarea name="comment" cols="30" rows="10" placeholder="Please enter your comment"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="submit" name="submit" value="Post" style="width: 235px; height: 40px;"></td>
-            </tr>
-        </table>
-    </form>
-    </center>
   
 </body>
 </html>
@@ -586,16 +557,16 @@
       <div class="footer__wrapper">
         <div class="footer__col1">
           <div class="footer__logo">
-            <img src="./images/logo.svg" alt="shaif's cuisine">
+            <img src="./images/anya.png" alt="shaif's cuisine">
           </div>
           <p class="footer__desc">
-            Fresh and delicious traditional Bangladeshi food to delight the whole family.
+            เว็บไซค์เพื่อการเรียนรู้<br>ด้านอาหาร 4 ภาคของประเทศไทย
           </p>
           <div class="footer__socials">
             <h4 class="footer__socials__title">Follow us</h4>
             <ol class="footer__socials__list">
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100007748142493" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-facebook">
@@ -603,7 +574,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -613,8 +584,8 @@
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                   </svg>
                 </a>
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -623,7 +594,7 @@
                       d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
                   </svg>
                 </a>
-              </li>
+              </li> -->
             </ol>
           </div>
         </div>
@@ -633,22 +604,22 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="/index.html">Home</a>
+              <a href="./home.php">Home</a>
             </li>
             <li>
-              <a href="./menu.html">Menu</a>
+              <a href="./ภาคเหนือ.html">ภาคเหนือ</a>
             </li>
             <li>
-              <a href="./booking.html">Book Table</a>
+              <a href="./ภาคอีสาน.html">ภาคอีสาน</a>
             </li>
             <li>
-              <a href="./about.html">About Us</a>
+              <a href="./ภาคกลาง.html">ภาคกลาง</a>
             </li>
             <li>
-              <a href="./contact.html">contact Us</a>
+              <a href="./ภาคใต้.html">ภาคใต้</a>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="เกี่ยวกับ.html">เกี่ยวกับ</a>
             </li>
           </ol>
         </div>
@@ -658,14 +629,14 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact.html">Contact</a>
             </li>
             <li>
-              <a href="#">Support Center</a>
+              <a href="./เกี่ยวกับ.html">เกี่ยวกับ</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">Feedback</a>
-            </li>
+            </li> -->
           </ol>
         </div>
         <div class="footer__col4">
@@ -674,13 +645,13 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="#">+880123</a>
+              <a href="#">+66 0968054317</a>
             </li>
             <li>
-              <a href="#">webcifar@gmail.com</a>
+              <a href="#">CH.Chanonlien@gmail.com</a>
             </li>
             <li>
-              <a href="#">GEC Circle, Chittagong, Bangladesh</a>
+              <a href="#">SB-TECH</a>
             </li>
           </ol>
         </div>
