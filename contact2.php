@@ -1,3 +1,15 @@
+<?php 
+
+    session_start();
+    require_once 'config/db.php';
+    if (!isset($_SESSION['user_login'])) {
+        $_SESSION['error'] = 'กรุณาเข้าสู่ระบบ!';
+        header('location: signin.php');
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +32,7 @@
   <div class="nav">
     <div class="container">
       <div class="nav__wrapper">
-        <a href="./home.php" class="logo">
+        <a href="./user.php" class="logo">
           <img src="./images/logo4.png" alt="shaif's cuisine">
         </a>
         <nav>
@@ -45,14 +57,15 @@
             </div>
             <div class="nav__list__wrapper">
 
-              <li><a class="nav__link" href="./home.php">Home</a></li>
-              <li><a class="nav__link" href="./ภาคเหนือ.html">ภาคเหนือ</a></li>
-              <li><a class="nav__link" href="./ภาคอีสาน.html">ภาคอีสาน</a></li>
-              <li><a class="nav__link" href="./ภาคกลาง.html">ภาคกลาง</a></li>
-              <li><a class="nav__link" href="./ภาคใต้.html">ภาคใต้</a></li>
-              <li><a class="nav__link" href="./เกี่ยวกับ.html">เกี่ยวกับ</a></li>
-              <li><a class="nav__link" href="./contact.html">Contact</a></li>
-              <li><a href="./signin.php" class="btn primary-btn">Login</a></li>
+            <li><a class="nav__link" href="./user.php">Home</a></li>
+              <li><a class="nav__link" href="./ภาคเหนือ1.php">ภาคเหนือ</a></li>
+              <li><a class="nav__link" href="./ภาคอีสาน1.php">ภาคอีสาน</a></li>
+              <li><a class="nav__link" href="./ภาคกลาง1.php">ภาคกลาง</a></li>
+              <li><a class="nav__link" href="./ภาคใต้1.php">ภาคใต้</a></li>
+              <li><a class="nav__link" href="./เกี่ยวกับ1.php">เกี่ยวกับ</a></li>
+              <li><a class="nav__link" href="./contact2.php">Contact</a></li>
+              <li><a class="nav__link" href="./comment1.php" target="_blank">Comment</a></li>
+              <li><a href="./home.php" class="btn primary-btn">Logout</a></li>
             </div>
           </ol>
         </nav>
@@ -190,22 +203,22 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="./home.php">Home</a>
+              <a href="./user.php">Home</a>
             </li>
             <li>
-              <a href="./ภาคเหนือ.html">ภาคเหนือ</a>
+              <a href="./ภาคเหนือ1.php">ภาคเหนือ</a>
             </li>
             <li>
-              <a href="./ภาคอีสาน.html">ภาคอีสาน</a>
+              <a href="./ภาคอีสาน1.php">ภาคอีสาน</a>
             </li>
             <li>
-              <a href="./ภาคกลาง.html">ภาคกลาง</a>
+              <a href="./ภาคกลาง1.php">ภาคกลาง</a>
             </li>
             <li>
-              <a href="./ภาคใต้.html">ภาคใต้</a>
+              <a href="./ภาคใต้1.php">ภาคใต้</a>
             </li>
             <li>
-              <a href="เกี่ยวกับ.html">เกี่ยวกับ</a>
+              <a href="เกี่ยวกับ1.php">เกี่ยวกับ</a>
             </li>
           </ol>
         </div>
@@ -215,10 +228,10 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="./contact.html">Contact</a>
+              <a href="./contact2.php">Contact</a>
             </li>
             <li>
-              <a href="./เกี่ยวกับ.html">เกี่ยวกับ</a>
+              <a href="./เกี่ยวกับ1.php">เกี่ยวกับ</a>
             </li>
             <!-- <li>
               <a href="#">Feedback</a>

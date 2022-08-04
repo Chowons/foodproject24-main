@@ -1,3 +1,15 @@
+<?php 
+
+    session_start();
+    require_once 'config/db.php';
+    if (!isset($_SESSION['user_login'])) {
+        $_SESSION['error'] = 'กรุณาเข้าสู่ระบบ!';
+        header('location: signin.php');
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,13 +18,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/anya.png" type="image/x-icon">
-  <title>Contact</title>
+  <title>เกี่ยวกับ</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
   <!-- aos library css  -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Add your custom css -->
+  <link rel="stylesheet" href="./about.css">
 </head>
 
 <body>
@@ -20,7 +32,7 @@
   <div class="nav">
     <div class="container">
       <div class="nav__wrapper">
-        <a href="./home.php" class="logo">
+        <a href="./user.php" class="logo">
           <img src="./images/logo4.png" alt="shaif's cuisine">
         </a>
         <nav>
@@ -45,14 +57,15 @@
             </div>
             <div class="nav__list__wrapper">
 
-              <li><a class="nav__link" href="./home.php">Home</a></li>
-              <li><a class="nav__link" href="./ภาคเหนือ.html">ภาคเหนือ</a></li>
-              <li><a class="nav__link" href="./ภาคอีสาน.html">ภาคอีสาน</a></li>
-              <li><a class="nav__link" href="./ภาคกลาง.html">ภาคกลาง</a></li>
-              <li><a class="nav__link" href="./ภาคใต้.html">ภาคใต้</a></li>
-              <li><a class="nav__link" href="./เกี่ยวกับ.html">เกี่ยวกับ</a></li>
-              <li><a class="nav__link" href="./contact.html">Contact</a></li>
-              <li><a href="./signin.php" class="btn primary-btn">Login</a></li>
+            <li><a class="nav__link" href="./user.php">Home</a></li>
+              <li><a class="nav__link" href="./ภาคเหนือ1.php">ภาคเหนือ</a></li>
+              <li><a class="nav__link" href="./ภาคอีสาน1.php">ภาคอีสาน</a></li>
+              <li><a class="nav__link" href="./ภาคกลาง1.php">ภาคกลาง</a></li>
+              <li><a class="nav__link" href="./ภาคใต้1.php">ภาคใต้</a></li>
+              <li><a class="nav__link" href="./เกี่ยวกับ1.php">เกี่ยวกับ</a></li>
+              <li><a class="nav__link" href="./contact2.php">Contact</a></li>
+              <li><a class="nav__link" href="./comment1.php" target="_blank">Comment</a></li>
+              <li><a href="./home.php" class="btn primary-btn">Logout</a></li>
             </div>
           </ol>
         </nav>
@@ -60,83 +73,59 @@
     </div>
   </div>
   <!-- End Nav Section -->
-  <!-- Store Info Section -->
-  <!-- Store Info Section -->
-  <section id="storeInfo" data-aos="fade-up">
+  <!-- Our Story Section -->
+  <section id="ourStory" data-aos="fade-up">
     <div class="container">
-      <div class="storeInfo__wrapper">
-        <div class="storeInfo__item">
-          <div class="storeInfo__icon">
-            <img src="./images/anya.png" alt="clock icon">
-          </div>
-          <h3 class="storeInfo__title">
-            Chanon
-          </h3>
-          <p class="storeInfo__text">
-            Name
-          </p>
+      <div class="ourStory__wrapper">
+
+        <div class="ourStory__img">
+          <img src="./images/อาหาร4ภาค1.jpg" alt="shaif's cuisine">
         </div>
-        <div class="storeInfo__item">
-          <div class="storeInfo__icon">
-            <img src="./images/address-icon.svg" alt="clock icon">
-          </div>
-          <h3 class="storeInfo__title">
-            SB-TECH
+        <div class="ourStory__info">
+          <h3 class="ourStory__title">
+            อาหารไทย
           </h3>
-          <p class="storeInfo__text">
-            Address
+          <p class="ourStory__subtitle">
+            4 ภาค
           </p>
-        </div>
-        <div class="storeInfo__item">
-          <div class="storeInfo__icon">
-            <img src="./images/phone-icon.svg" alt="clock icon">
-          </div>
-          <h3 class="storeInfo__title">
-            +66968054317
-          </h3>
-          <p class="storeInfo__text">
-            Call Now
+          <p class="ourStory__text">
+            อาหารไทยมีมากมายหลากหลายเมนู ทั้งเป็นที่รู้จักโดยทั่วไปและอาจจะไม่เคยได้ยินชื่อเสียงเรียงนามของเมนูนั้นๆ มาก่อนเลยก็ได้ ยิ่งหากเป็นอาหารไทยทั้ง 4 ภาคแล้ว…เหนือ กลาง อีสาน และใต้ ความอร่อยของแต่ละท้องถิ่นย่อมแตกต่างกันไปตามวัฒนธรรมและประเพณีแต่เก่าก่อน 
+            <br><br>
+            
           </p>
         </div>
       </div>
     </div>
   </section>
-  <!-- End Store Info Section -->
-  <!-- End Store Info Section -->
-  <!-- Contact Form Section -->
-  <!-- <section id="form" data-aos="fade-down">
+  <!-- End Our Story Section -->
+  <!-- Our Goals -->
+  <section id="ourGoals" data-aos="fade-down">
     <div class="container">
-      <h3 class="form__title">
-        Contact & Inquiry
-      </h3>
-      <div class="form__wrapper">
-        <form name="contact" method="POST" netlify>
-          <div class="form__group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="First Name" required>
-          </div>
-          <div class="form__group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="Last Name" required>
-          </div>
-          <div class="form__group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" required>
-          </div>
-          <div class="form__group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="Subject" required>
-          </div>
-          <div class="form__group form__group__full">
-            <label for="message">Message</label>
-            <textarea name="Message" id="message" cols="30" rows="10" required></textarea>
-          </div>
-          <button type="submit" class="btn primary-btn">Send</button>
-        </form>
+      <div class="ourGoals__info">
+        <h3 class="ourGoals__title">
+          อาหารแต่ละภาค
+        </h3>
+        <p class="ourGoals__text">
+          อาหารภาคเหนือ: แกงอ่อมเนื้อ  น้ำพริกหนุ่ม  ขนมจีนน้ำเงี้ยว<br>
+            อาหารภาคอีสาน: ส้มตำไทยไข่เค็ม  ลาบหมู  ไส้กรอกอีสาน<br>
+            อาหารภาคกลาง: ผัดกะเพราหมูสับ  ต้มยำกุ้งน้ำข้น  แกงเทโพ<br>
+            อาหารภาคใต้: ผัดสะตอกุ้งสด  คั่วกลิ้งหมู  แกงไตปลา<br>
+        </p>
+      </div>
+      <div class="ourGoals__imgs__wrapper" data-aos="fade-up">
+        <div class="ourGoals__img1">
+          <img src="./images/ส้มคำไทยไข่เค็ม.jpg" alt="kitchen img">
+        </div>
+        <div class="ourGoals__img2">
+          <img src="./images/แกงเทโพ.jpg" alt="kitchen img">
+        </div>
+        <div class="ourGoals__img3">
+          <img src="./images/แกงไตปลา1.jpg" alt="kitchen img">
+        </div>
       </div>
     </div>
-  </section> -->
-  <!-- End Contact Form Section-->
+  </section>
+  <!-- End Our Goals -->
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -190,22 +179,22 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="./home.php">Home</a>
+              <a href="./user.php">Home</a>
             </li>
             <li>
-              <a href="./ภาคเหนือ.html">ภาคเหนือ</a>
+              <a href="./ภาคเหนือ1.php">ภาคเหนือ</a>
             </li>
             <li>
-              <a href="./ภาคอีสาน.html">ภาคอีสาน</a>
+              <a href="./ภาคอีสาน1.php">ภาคอีสาน</a>
             </li>
             <li>
-              <a href="./ภาคกลาง.html">ภาคกลาง</a>
+              <a href="./ภาคกลาง1.php">ภาคกลาง</a>
             </li>
             <li>
-              <a href="./ภาคใต้.html">ภาคใต้</a>
+              <a href="./ภาคใต้1.php">ภาคใต้</a>
             </li>
             <li>
-              <a href="เกี่ยวกับ.html">เกี่ยวกับ</a>
+              <a href="เกี่ยวกับ1.php">เกี่ยวกับ</a>
             </li>
           </ol>
         </div>
@@ -215,10 +204,10 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="./contact.html">Contact</a>
+              <a href="./contact2.php">Contact</a>
             </li>
             <li>
-              <a href="./เกี่ยวกับ.html">เกี่ยวกับ</a>
+              <a href="./เกี่ยวกับ1.php">เกี่ยวกับ</a>
             </li>
             <!-- <li>
               <a href="#">Feedback</a>
@@ -253,10 +242,9 @@
   </div>
   <!-- End Footer -->
 
-
-  <!-- aos script -->
+  <!-- aos scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- custom script -->
+  <!-- custom scripts -->
   <script src="./main.js"></script>
 </body>
 

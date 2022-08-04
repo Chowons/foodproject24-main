@@ -2,24 +2,25 @@
 
     session_start();
     require_once 'config/db.php';
-    if (!isset($_SESSION['admin_login'])) {
+    if (!isset($_SESSION['user_login'])) {
         $_SESSION['error'] = 'กรุณาเข้าสู่ระบบ!';
         header('location: signin.php');
     }
 
 ?>
 
+
 <?php 
 
-    include_once 'controllers/Comment.php';
-    $com = new Comment();
+  include_once 'controllers/Comment.php';
+  $com = new Comment();
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" href="./images/anya.png" type="image/x-icon">
   <title>Comment</title>
@@ -33,28 +34,33 @@
   <link rel="stylesheet" href="./soi.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+
 </head>
 <body>
 
-    <div class="box">
-        <ul>
-            <?php 
-                if($result = $com->indexc()) {
-                while ($data = $result->fetch_assoc()) {
-            ?>
-                <li>
-                    <b><?php echo $data['name']; ?></b> - <?php echo $data['comment']; ?> - <?php echo $com->dateFormat($data['comment_time']); ?>
-                </li>
-                <?php } ?>
-            <?php }?>
-        </ul>
-    </div>
+  <div class="box">
+      <ul>
+          <?php 
+              if($result = $com->indexc()) {
+              while ($data = $result->fetch_assoc()) {
+          ?>
+              <li>
+                  <b><?php echo $data['name']; ?></b> - <?php echo $data['comment']; ?> - <?php echo $com->dateFormat($data['comment_time']); ?>
+              </li>
+              <?php } ?>
+          <?php }?>
+      </ul>
+  </div>
 
-    <br><br>
+  <br><br>
 
-    <center>
+  
+</body>
+</html>
+<center>
     <?php 
-    
+
         if(isset($_GET['msg'])) {
             $msg = $_GET['msg'];
             echo "<span style='color: green; font-size: 20px'>".$msg."</span>";
@@ -80,6 +86,7 @@
         </table>
     </form>
     </center>
-    
-</body>
-</html>
+
+    <body>
+  <!-- Nav Section -->
+  

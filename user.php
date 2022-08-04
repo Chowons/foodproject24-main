@@ -20,7 +20,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/anya.png" type="image/x-icon">
-  <title>home | user</title>
+  <title>THAI FOOD</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
@@ -36,7 +36,7 @@
     <div class="container">
       <div class="nav__wrapper">
         <a href="./user.php" class="logo">
-          <img src="./images/logo4.png" alt="chowons">
+          <img src="./images/logo4.png" alt="Thai Food">
         </a>
         <nav>
           <div class="nav__icon">
@@ -61,28 +61,14 @@
             <div class="nav__list__wrapper">
 
             <li><a class="nav__link" href="./user.php">Home</a></li>
-              <li><a class="nav__link" href="./north1.php">ภาคเหนือ</a></li>
-              <li><a class="nav__link" href="./northeast1.php">ภาคอีสาน</a></li>
-              <li><a class="nav__link" href="./middle1.php">ภาคกลาง</a></li>
-              <li><a class="nav__link" href="./south1.php">ภาคใต้</a></li>
-              <li><a class="nav__link" href="./about1.php">เกี่ยวกับ</a></li>
-              <li><a class="nav__link" href="./contact1.php">Contact</a></li>
-                <li><div class="btn primary-btn">
-                        <?php 
-
-                            if (isset($_SESSION['user_login'])) {
-                                $user_id = $_SESSION['user_login'];
-                                $stmt = $conn->query("SELECT * FROM users WHERE id = $user_id");
-                                $stmt->execute();
-                                $row = $stmt->fetch(PDO::FETCH_ASSOC);
-                            }
-                        ?>
-                        
-                        <a class="btn primary-btn" href="./home.php">Logout</a>
-                        
-                    </div>
-                    
-                </li>
+              <li><a class="nav__link" href="./ภาคเหนือ1.php">ภาคเหนือ</a></li>
+              <li><a class="nav__link" href="./ภาคอีสาน1.php">ภาคอีสาน</a></li>
+              <li><a class="nav__link" href="./ภาคกลาง1.php">ภาคกลาง</a></li>
+              <li><a class="nav__link" href="./ภาคใต้1.php">ภาคใต้</a></li>
+              <li><a class="nav__link" href="./เกี่ยวกับ1.php">เกี่ยวกับ</a></li>
+              <li><a class="nav__link" href="./contact2.php">Contact</a></li>
+              <li><a class="nav__link" href="./comment1.php" target="_blank">Comment</a></li>
+              <li><a href="./home.php" class="btn primary-btn">Logout</a></li>
             </div>
           </ul>
         </nav>
@@ -104,14 +90,14 @@
               ความอร่อยของแต่ละท้องถิ่นย่อมแตกต่างกันไปตามวัฒนธรรมและประเพณีแต่เก่าก่อน
             </p>
             <div class="button__wrapper">
-              <a href="./menu.html" class="btn primary-btn">เกี่ยวกับ</a>
-              <a href="./booking.html" class="btn">Contact</a>
+              <a href="./เกี่ยวกับ1.php" class="btn primary-btn">เกี่ยวกับ</a>
+              <a href="./contact2.php" class="btn">Contact</a>
             </div>
           </div>
         </div>
         <div class="hero__right" data-aos="fade-right">
           <div class="hero__imgWrapper">
-            <img src="./images/heroImg.png">
+            <img src="./images/อาหาร4ภาค.jpg">
           </div>
         </div>
       </div>
@@ -206,7 +192,7 @@
           <p class="ourSpecials__text">
             ต้มยำกุ้ง และ ส้มตำ เป็นอาหารที่นิยมรับประทานกันมากในประเทศไทย เป็นอาหารที่หากินได้ง่าย
           </p>
-          <a href="./signin.php" class="btn primary-btn">Login</a>
+          <a href="./comment1.php" class="btn primary-btn" target="blank">comment</a>
         </div>
       </div>
     </div>
@@ -227,7 +213,7 @@
             <h3 class="dishGrid__item__title">
               กะเพราหมูสับไข่ดาว
             </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
+            <h3 class="dishGrid__item__price">Krapao Hmusub Kaidao</h3>
             <!-- <div class="dishGrid__item__stars">
               <img src="./images/3star.png" alt="3 star">
             </div> -->
@@ -241,7 +227,7 @@
             <h3 class="dishGrid__item__title">
               แพนงไก่
             </h3>
-            <h3 class="dishGrid__item__price">Panang Chicken</h3>
+            <h3 class="dishGrid__item__price">Panang Kai</h3>
             <!-- <div class="dishGrid__item__stars">
               <img src="./images/3star.png" alt="3 star">
             </div> -->
@@ -249,13 +235,13 @@
         </div>
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/food-7.png" alt="food img">
+            <img src="./images/แกงอ่อม.jpg" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              Hot Green Bowl
+              แกงอ่อม เนื้อ
             </h3>
-            <h3 class="dishGrid__item__price">$12</h3>
+            <h3 class="dishGrid__item__price">Thai Northern Style Beef Soup</h3>
             <!-- <div class="dishGrid__item__stars">
               <img src="./images/3star.png" alt="3 star">
             </div> -->
@@ -271,26 +257,28 @@
       <div class="discount__wrapper">
         <div class="discount__images">
           <div class="discount__img1">
-            <img src="./images/food-5.png" alt="Food img">
+            <img src="./images/ข้าวสวย.jpg" alt="Food img">
           </div>
           <div class="discount__img2">
-            <img src="./images/food-4.png" alt="Food img">
+            <img src="./images/ข้าวเหนียว.jpg" alt="Food img">
           </div>
           <div class="discount__img3">
-            <img src="./images/food-3.png" alt="Food img">
+            <img src="./images/ข้าวไรซ์เบอร์รี่.jpg" alt="Food img">
           </div>
         </div>
         <div class="discount__info">
-          <h3 class="discount__text">20% OFF</h3>
-          <h3 class="discount__title">Demo Dish For Discount</h3>
+          <h3 class="discount__title">ข้าวที่นิยมกินในเมืองไทย</h3>
+          <h3 class="discount__text">1.ข้าวสวย</h3>
+          <h3 class="discount__text">2.ข้าวเหนียว</h3>
+          <h3 class="discount__text">3.ข้าวไรซ์เบอร์รี่</h3>
           <h3 class="discount__price">
-            <span class="discount__oldPrice">$45</span>
-            <span class="discount__newPrice">$35</span>
+            <!-- <span class="discount__oldPrice">$45</span>
+            <span class="discount__newPrice">$35</span> -->
           </h3>
-          <div class="discount__stars">
+          <!-- <div class="discount__stars">
             <img src="./images/3star.png" alt="3 stars">
-          </div>
-          <a class="btn primary-btn" href="./booking.html">Book Table</a>
+          </div> -->
+          <a class="btn primary-btn" href="./เกี่ยวกับ1.php">เกี่ยวกับ</a>
         </div>
       </div>
     </div>
@@ -300,19 +288,26 @@
   <section id="eventsMedia" data-aos="fade-up">
     <div class="container">
       <div class="eventsMedia__wrapper">
-        <div class="eventsMedia__1">
-          <img src="./images/eventsMedia1.png" alt="events">
+        <!-- <div class="eventsMedia__1">
+          <img src="./images/อาหารภาคใต้.jpg" alt="events">
           <a href="#" class="eventsMedia__1__playButton">
             <img src="./images/playIcon.svg" alt="play button">
           </a>
+        </div> -->
+        <div class="eventMedia__2">
+          <img src="./images/ใต้..jpg" alt="events">
         </div>
         <div class="eventMedia__2">
-          <img src="./images/eventsMedia2.png" alt="events">
+          <img src="./images/อาหารภาคใต้1.jpg" alt="events">
+        </div>
+        <div class="eventMedia__2">
+          <img src="./images/ใต้2.jpg" alt="events">
         </div>
       </div>
     </div>
   </section>
   <!-- End Events Media -->
+
   <!-- Events Info -->
   <section id="eventsInfo" data-aos="fade-up">
     <div class="container">
@@ -320,16 +315,21 @@
         <div class="eventsInfo__left">
           <div class="eventsInfo__item">
             <div class="eventsInfo__item__img">
-              <img src="./images/event-corporate.png" alt="corporate events">
+              <img src="./images/sb-tech.png" alt="corporate events">
             </div>
             <div class="eventsInfo__item__info">
-              <h2 class="eventsInfo__item__title">Corporate Events</h2>
+              <h2 class="eventsInfo__item__title">SB-TECH</h2>
               <p class="eventsInfo__item__text">
-                Shaif's Cuisine is the perfect venue for your corporate events. We specialize in private parties.
+                วิทยาลัยเทคโนโลยี<br>
+                สว่างบริบูรณ์พัทยา<br>
+                ถ.สุขุมวิท 53<br>
+                ต.หนองปรือ<br>
+                อ.บางละมุง<br>
+                จ.ชลบุรี 20150
               </p>
             </div>
           </div>
-          <div class="eventsInfo__item">
+          <!-- <div class="eventsInfo__item">
             <div class="eventsInfo__item__img">
               <img src="./images/event-weedings.png" alt="wedding events">
             </div>
@@ -340,13 +340,13 @@
                 sophisticated and comfortable.
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="eventsInfo__right">
-          <h2 class="eventsInfo__title">Book For Events</h2>
-          <p class="eventsInfo__text">Book your private event or corporate function at Shaif's cuisine to experience a
-            truly unique experience.</p>
-          <a href="./contact.html" class="btn primary-btn">Contact Now</a>
+          <h2 class="eventsInfo__title">Contact</h2>
+          <p class="eventsInfo__text">
+            มีช่องทางการติดต่อทั้ง เบอร์โทรศัพท์ หรือช่องทาง gmail or address</p>
+          <a href="./contact2.php" class="btn primary-btn">Contact Now</a>
         </div>
       </div>
     </div>
@@ -358,39 +358,46 @@
       <div class="whyUs__wrapper">
         <div class="whyUs__left" data-aos="fade-right">
           <h2 class="whyUs__title">
-            Why Choose Our Food
+            Food Website Interview
           </h2>
           <p class="whyUs__text">
-            Quality of Service, Food, Ambiance, and Value of Money are the primary elements for choosing a restaurant.
-            Shaif's Cuisine is one of the most exquisite fine-dinning restaurant in Chittagong cities with a captivating
-            view of GEC Hills, perfect ambiance, and scrumptious food.
+            เว็ปไซต์นี้แนะนำอาหารไทยแต่ละภาค ทั้ง 4 ภาค<br>
+            รายชื่อ รสชาติ กระบวนการวิธีการทำอาหาร<br>
+            และยังมีการที่ผู้ใช้งานสามารถ comment<br>
+            เพื่อที่จะได้ รีวิว หรือแนะนำติชมได้อีกด้วย<br>
+            แต่ต้อง Login เป็นสมาชิกก่อนนะครับ<br>
+            .
           </p>
+          <h2 class="whyUs__title">
+            <a href="./comment1.php" class="btn primary-btn" target="blank">comment</a>
+          </h2>
         </div>
+      
         <div class="whyUs__right" data-aos="fade-left">
           <div class="whyUs__items__wrapper">
             <div class="whyUs__item">
               <div class="whyUs__item__icon">
                 <img src="./images/whyUs-icon1.svg" alt="quality Food">
               </div>
-              <p class="whyUs__item__text">Quality Food</p>
+              <p class="whyUs__item__text">อาหารไทย 4 ภาค</p>
             </div>
             <div class="whyUs__item">
               <div class="whyUs__item__icon">
                 <img src="./images/whyUs-icon2.svg" alt="Classical taste">
               </div>
-              <p class="whyUs__item__text">Classical taste</p>
+              <p class="whyUs__item__text">รสชาติ</p>
             </div>
             <div class="whyUs__item">
               <div class="whyUs__item__icon">
                 <img src="./images/whyUs-icon3.svg" alt="Skilled chef">
               </div>
-              <p class="whyUs__item__text">Skilled chef</p>
+              <p class="whyUs__item__text">วิธีการทำ</p>
             </div>
             <div class="whyUs__item">
               <div class="whyUs__item__icon">
                 <img src="./images/whyUs-icon4.svg" alt="Best service">
               </div>
-              <p class="whyUs__item__text">Best service</p>
+              <p class="whyUs__item__text">Comment</p>
             </div>
           </div>
         </div>
@@ -399,7 +406,7 @@
   </section>
   <!-- End Why Us section -->
   <!-- Testimonial Section -->
-  <section id="testimonial">
+  <!-- <section id="testimonial">
     <div class="container">
       <div class="testimonial__wrapper" data-aos="fade-up">
         <h2 class="testimonial__title">What Our Customers Say</h2>
@@ -470,9 +477,9 @@
       </div>
     </div>
   </section>
-  <!-- End Testimonial Section -->
+  <-- End Testimonial Section -->
   <!-- Newsletter Section -->
-  <section id="newsletter" data-aos="fade-up">
+  <!-- <section id="newsletter" data-aos="fade-up">
     <div class="container">
       <div class="newsletter__wrapper">
         <div class="newsletter__info">
@@ -491,7 +498,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --> 
   <!-- End Newsletter Section -->
 
   <!-- comment -->
@@ -565,16 +572,16 @@
       <div class="footer__wrapper">
         <div class="footer__col1">
           <div class="footer__logo">
-            <img src="./images/logo.svg" alt="shaif's cuisine">
+            <img src="./images/anya.png" alt="shaif's cuisine">
           </div>
           <p class="footer__desc">
-            Fresh and delicious traditional Bangladeshi food to delight the whole family.
+            เว็บไซค์เพื่อการเรียนรู้<br>ด้านอาหาร 4 ภาคของประเทศไทย
           </p>
           <div class="footer__socials">
             <h4 class="footer__socials__title">Follow us</h4>
             <ol class="footer__socials__list">
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100007748142493" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-facebook">
@@ -582,7 +589,7 @@
                   </svg>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -592,8 +599,8 @@
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                   </svg>
                 </a>
-              </li>
-              <li>
+              </li> -->
+              <!-- <li>
                 <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
@@ -602,7 +609,7 @@
                       d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
                   </svg>
                 </a>
-              </li>
+              </li> -->
             </ol>
           </div>
         </div>
@@ -612,22 +619,22 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="/index.html">Home</a>
+              <a href="./user.php">Home</a>
             </li>
             <li>
-              <a href="./menu.html">Menu</a>
+              <a href="./ภาคเหนือ1.php">ภาคเหนือ</a>
             </li>
             <li>
-              <a href="./booking.html">Book Table</a>
+              <a href="./ภาคอีสาน1.php">ภาคอีสาน</a>
             </li>
             <li>
-              <a href="./about.html">About Us</a>
+              <a href="./ภาคกลาง1.php">ภาคกลาง</a>
             </li>
             <li>
-              <a href="./contact.html">contact Us</a>
+              <a href="./ภาคใต้1.php">ภาคใต้</a>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="เกี่ยวกับ1.php">เกี่ยวกับ</a>
             </li>
           </ol>
         </div>
@@ -637,14 +644,14 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact2.php">Contact</a>
             </li>
             <li>
-              <a href="#">Support Center</a>
+              <a href="./เกี่ยวกับ1.php">เกี่ยวกับ</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">Feedback</a>
-            </li>
+            </li> -->
           </ol>
         </div>
         <div class="footer__col4">
@@ -653,13 +660,13 @@
           </h3>
           <ol class="footer__text">
             <li>
-              <a href="#">+880123</a>
+              <a href="#">+66 0968054317</a>
             </li>
             <li>
-              <a href="#">webcifar@gmail.com</a>
+              <a href="#">CH.Chanonlien@gmail.com</a>
             </li>
             <li>
-              <a href="#">GEC Circle, Chittagong, Bangladesh</a>
+              <a href="#">SB-TECH</a>
             </li>
           </ol>
         </div>
