@@ -472,23 +472,23 @@
             Links
           </h3>
           <ol class="footer__text">
-            <li>
+          <li>
               <a href="./user.php">Home</a>
             </li>
             <li>
-              <a href="./ภาคเหนือ1.php">ภาคเหนือ</a>
+              <a href="./north2.php">ภาคเหนือ</a>
             </li>
             <li>
-              <a href="./ภาคอีสาน1.php">ภาคอีสาน</a>
+              <a href="./northeast2.php">ภาคอีสาน</a>
             </li>
             <li>
-              <a href="./ภาคกลาง1.php">ภาคกลาง</a>
+              <a href="./middle2.php">ภาคกลาง</a>
             </li>
             <li>
-              <a href="./ภาคใต้1.php">ภาคใต้</a>
+              <a href="./south2.php">ภาคใต้</a>
             </li>
             <li>
-              <a href="เกี่ยวกับ1.php">เกี่ยวกับ</a>
+              <a href="about2.php">เกี่ยวกับ</a>
             </li>
           </ol>
         </div>
