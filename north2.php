@@ -18,7 +18,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/anya.png" type="image/x-icon">
-  <title>ภาคกลาง</title>
+  <title>ภาคเหนือ</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./globalStyles.css">
   <link rel="stylesheet" href="./components.css">
@@ -60,11 +60,11 @@
             <div class="nav__list__wrapper">
 
             <li><a class="nav__link" href="./user.php">Home</a></li>
-              <li><a class="nav__link" href="./ภาคเหนือ1.php">ภาคเหนือ</a></li>
-              <li><a class="nav__link" href="./ภาคอีสาน1.php">ภาคอีสาน</a></li>
-              <li><a class="nav__link" href="./ภาคกลาง1.php">ภาคกลาง</a></li>
-              <li><a class="nav__link" href="./ภาคใต้1.php">ภาคใต้</a></li>
-              <li><a class="nav__link" href="./เกี่ยวกับ1.php">เกี่ยวกับ</a></li>
+              <li><a class="nav__link" href="./north2.php">ภาคเหนือ</a></li>
+              <li><a class="nav__link" href="./northeast2.php">ภาคอีสาน</a></li>
+              <li><a class="nav__link" href="./middle2.php">ภาคกลาง</a></li>
+              <li><a class="nav__link" href="./south2.php">ภาคใต้</a></li>
+              <li><a class="nav__link" href="./about2.php">เกี่ยวกับ</a></li>
               <li><a class="nav__link" href="./contact2.php">Contact</a></li>
               <li><a class="nav__link" href="./comment1.php" target="_blank">Comment</a></li>
               <li><a href="./home.php" class="btn primary-btn">Logout</a></li>
@@ -79,7 +79,7 @@
   <section id="page__title" data-aos="fade-up">
     <div class="container">
       <h2 class="page__title__text">
-        MIDDLE Memu
+        NORTH Memu
       </h2>
     </div>
   </section>
@@ -90,40 +90,37 @@
       <div class="ourSpecials__wrapper">
         <div class="ourSpecials__item">
           <div class="ourSpecials__item__img">
-            <img src="./images/ผัดกระเพราหมูสับ3.jpg" alt="food img">
+            <img src="./images/แกงอ่อม.jpg" alt="food img">
           </div>
           <div class="ourSpecials__item__info">
             <h3 class="ourSpecials__item__title">
-              ผัดกะเพราหมูสับ
+              แกงอ่อมเนื้อ
             </h3>
-            <div class="ourSpecials__food__item">อาหารไทยขึ้นชื่อในรสชาติที่จัดจ้านจากสมุนไพร
-              หลากหลาย ที่นำมาปรุงเป็นเมนูต่างๆ ให้เราได้ลิ้มลองกัน และหนึ่งในเมนูยอดนิยม ที่มีรสชาติอร่อย
-               จัดจ้าน และยังหาทานได้ง่ายสุดๆ ก็คงจะเป็นอะไรไปไม่ได้นอกเสียจาก “ผัดกะเพรา” 
-               เมนูยอดฮิตที่กรุ่นไปด้วยกลิ่นใบกะเพราที่คลุกเคล้าไปกับเนื้อสัตว์ตามต้องการ
-
-              
+            <div class="ourSpecials__food__item">แกงอ่อมเนื้อ นิยมใช้เนื้อวัวและเครื่องในวัว เป็นส่วนผสมหลัก บ้างใช้เนื้อควายและเครื่องในควายเป็นส่วนผสม บ้างใช้แต่เครื่องใน เรียกชื่อตามเนื้อที่นำมาแกง เช่น แกงอ่อมเครื่องในวัว 
+              แกงอ่อมเครื่องในหมู แกงอ่อมเครื่องในควาย<br>
+              .
             </div>
             <div class="button__wrapper">
-              <a href="./foodm/ผัดกะเพราหมูสับ.html" class="btn primary-btn" target="_blank">More...</a>
-            </div>            
+              <a href="./foodn/แกงอ่อม.html" class="btn primary-btn" target="_blank">More...</a>
+            </div>
+            
+            <!-- <div class="ourSpecials__item__stars">
+              <img src="./images/3star.png" alt="3 stars">
+            </div> -->
           </div>
         </div>
         <div class="ourSpecials__item">
           <div class="ourSpecials__item__img">
-            <img src="./images/ต้มยํากุ้งน้ําข้น1.jpg" alt="food img">
+            <img src="./images/น้ำพริกหนุ่ม.jpg" alt="food img">
           </div>
           <div class="ourSpecials__item__info">
             <h3 class="ourSpecials__item__title">
-              ต้มยำกุ้งน้ำข้น
+              น้ำพริกหนุ่ม
             </h3>
-            <div class="ourSpecials__food__item">“ต้มยำ” เป็นหนึ่งในอาหารขึ้นชื่อของประเทศไทย 
-              เมนูรสจัดจานนี้มีครบรสทั้งความเผ็ดและความเปรี้ยวลงตัวที่จะช่วยอบอุ่นร่างกายได้เป็นอย่างดี
-               ต้มยำ มีด้วยกัน 2 แบบ คือน้ำใสและน้ำข้น 
-              คุณสามารถปรับเปลี่ยนส่วนผสมหลักตามความชอบ โดยเปลี่ยนจากกุ้งเป็น 
-              ไก่ หมู เนื้อ อาหารทะเล หรือเห็ด <br>
+            <div class="ourSpecials__food__item">อาหารพื้นบ้านภาคเหนือที่ใช้พริกหนุ่มนำมาย่างกับหอมแดงและกระเทียม พริกหนุ่ม คือพริกเม็ดใหญ่ที่มีขนาดเล็กกว่าพริกหยวกจะมีลักษณะยาวเรียว บางทีก็เรียกกันว่าพริกหอมหรือพริกอ่อน เอามาตำเป็นน้ำพริกหนุ่มกินคู่กับผักและแคบหมูกรอบ ๆ  
             </div>
             <div class="button__wrapper">
-              <a href="./foodm/ต้มยำกุ้งน้ำข้น.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/น้ำพริกหนุ่ม.html" class="btn primary-btn" target="_blank">More...</a>
             </div>
             <!-- <div class="ourSpecials__item__stars">
               <img src="./images/3star.png" alt="3 stars">
@@ -143,40 +140,41 @@
       <div class="dishGrid__wrapper">
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/แกงเทโพ.jpg" alt="food img">
+            <img src="./images/ขนมจีนน้ำเงี้ยว.jpg" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              แกงเทโพ
+              ขนมจีนน้ำเงี้ยว
             </h3>
             <div class="button__wrapper">
-              <a href="./foodm/แกงเทโพ.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/ขนมจีนน้ำเงี้ยว.html" class="btn primary-btn" target="_blank">More...</a>
             </div>
           </div>
         </div>
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/แกงมัสมั่นไก่.jpg" alt="food img">
+            <img src="./images/ข้าวซอยไก่.jpg" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              แกงมัสมั่นไก่<br>
+              ข้าวซอยไก่<br>
+              
             </h3>
             <div class="button__wrapper">
-              <a href="./foodm/แกงมัสมั่นไก่.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/ข้าวซอยไก่.html" class="btn primary-btn" target="_blank">More...</a>
             </div>                     
           </div>
         </div>
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/น้ำพริกกะปิ.jpg" alt="food img">
+            <img src="./images/แกงโฮะ.jpg" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              น้ำพริกกะปิ
+              แกงโฮะ
             </h3>
             <div class="button__wrapper">
-              <a href="./foodm/น้ำพริกกะปิ.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/แกงโฮะ.html" class="btn primary-btn" target="_blank">More...</a>
             </div>             
           </div>
         </div>
@@ -193,66 +191,66 @@
       <div class="dishGrid__wrapper">
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/แกงเขียวหวาน.jpg" alt="food img">
+            <img src="./images/ไส้อั่ว.webp" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              แกงเขียวหวาน
+              ไส้อั่ว
             </h3>
             <div class="button__wrapper">
-              <a href="./foodm/แกงเขียวหวาน.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/ไส้อั่ว.html" class="btn primary-btn" target="_blank">More...</a>
             </div>  
           </div>
         </div>
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/หมูสะเต๊ะ.jpg" alt="food img">
+            <img src="./images/ไข่ป่าม.jpg" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              หมูสะเต๊ะ
+              ไข่ป่าม
             </h3>
             <div class="button__wrapper">
-              <a href="./foodm/หมูสะเต๊ะ.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/ไข่ป่าม.html" class="btn primary-btn" target="_blank">More...</a>
             </div> 
           </div>
         </div>
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/ต้มข่าไก่.jpg" alt="food img">
+            <img src="./images/จอผักกาด.png" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              ต้มข่าไก่
+              จอผักกาด
             </h3>
             <div class="button__wrapper">
-              <a href="./foodm/ต้มขาไก่.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/จอผักกาด.html" class="btn primary-btn" target="_blank">More...</a>
             </div>
           </div>
         </div>
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/ทอดมันปลากราย.jpg" alt="food img">
+            <img src="./images/ข้าวกั๊นจิ๊น.jpg" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              ทอดมันปลากราย
+              ข้าวกั๊นจิ๊น
             </h3>
             <div class="button__wrapper">
-              <a href="./foodm/ทอดมันปลากราย.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/ข้าวกั๊นจิ๊น.html" class="btn primary-btn" target="_blank">More...</a>
             </div>
           </div>
         </div>
         <div class="dishGrid__item">
           <div class="dishGrid__item__img">
-            <img src="./images/หมูทอดกระเทียม.jpg" alt="food img">
+            <img src="./images/แกงกระด้าง.jpg" alt="food img">
           </div>
           <div class="dishGrid__item__info">
             <h3 class="dishGrid__item__title">
-              หมูทอดกระเทียม
+              แกงกระด้าง
             </h3>
             <div class="button__wrapper">
-              <a href="./foodm/หมูทอดกระเทียม.html" class="btn primary-btn" target="_blank">More...</a>
+              <a href="./foodn/แกงกระด้าง.html" class="btn primary-btn" target="_blank">More...</a>
             </div>
           </div>
         </div>
